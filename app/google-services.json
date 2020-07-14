@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "123618123282",
+    "firebase_url": "https://aptrack-c8f6f.firebaseio.com",
+    "project_id": "aptrack-c8f6f",
+    "storage_bucket": "aptrack-c8f6f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:123618123282:android:72b1a2d1a151c3b8c282cb",
+        "android_client_info": {
+          "package_name": "com.example.aptrack"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "123618123282-regudm62ps5k2014odarjmq1ft1qvocf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.aptrack",
+            "certificate_hash": "b63efe642ff751a19e7d79ececd6909b34fcba1c"
+          }
+        },
+        {
+          "client_id": "123618123282-alch03oomdced25vn6c4n76q2bhap2j1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB6eKQL1C_1V-_euQHADpYjf8hdE-hy2Pw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "123618123282-alch03oomdced25vn6c4n76q2bhap2j1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
