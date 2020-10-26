@@ -1,6 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#6200EE</color>
-    <color name="colorPrimaryDark">#3700B3</color>
+<!--    <color name="colorPrimary">#6200EE</color>-->
+<!--    <color name="colorPrimaryDark">#3700B3</color>-->
+<!--    <color name="colorAccent">#03DAC5</color>-->
+    <color name="colorPrimary">#AA3521</color>
+    <color name="colorPrimaryDark">#8F4C1E</color>
     <color name="colorAccent">#03DAC5</color>
+    <color name="bggradient_start">#032680</color>
+    <color name="bggradient_end">#D60A51</color>
+    <color name="bt_con_gradient_start">#066A0B</color>
+    <color name="bt_con_gradient_end">#CE65E365</color>
+    <color name="bt_con2_gradient_start">#D84315</color>
+    <color name="bt_con2_gradient_end">#FF9741</color>
 </resources>

@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/grad_actionbar"
     tools:context=".Connect">
 
     <LinearLayout
@@ -12,19 +13,31 @@
         android:orientation="vertical"
 
         tools:ignore="MissingConstraints">
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="SELECT DEVICE TO CONNECT"
+            android:fontFamily="@font/poppins_medium"
             android:gravity="center"
-            android:textSize="30dp"
-            android:textColor="#DE000000"
-            android:background="#FF6347"
-            android:textFontWeight="30"/>
+            android:text="@string/bt_device_select"
+            android:textColor="#DEFFFFFF"
+            android:textColorHighlight="#020202"
+            android:textFontWeight="30"
+            android:textSize="24sp" />
+        <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/swiperefresh"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
         <ListView
+            android:id="@+id/listBoundedDevice"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/listBoundedDevice"/>
+            android:background="#5B332929"
+            android:textColor="#DEFFFFFF"
+            android:textAlignment="center" />
+        </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
     </LinearLayout>
 

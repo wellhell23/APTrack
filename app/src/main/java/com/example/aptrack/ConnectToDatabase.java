@@ -52,7 +52,7 @@ public class ConnectToDatabase {
                 for (DocumentSnapshot documentSnapshot : queryDocumentSnapshots) {
                     String did = documentSnapshot.getId();
                     String val = documentSnapshot.getString("ppm");
-                    string1[0] += "ID" + did + "\tppm" + val + "\n";
+                    string1[0] += " " + did + "\t PPM : " + val + "\n";
                     Log.d("connecttto database", string1[0]);
                 }
                 Log.d("connecttto database", string1[0]);

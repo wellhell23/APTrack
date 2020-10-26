@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">APTrack</string>
+    <string name="welcome_text">AIR POLLUTION TRACK</string>
+    <string name="emission_hist">Hello There !</string>
+    <string name="bt_device_select">SELECT DEVICE TO CONNECT</string>
+
 </resources>

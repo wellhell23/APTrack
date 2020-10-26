@@ -4,13 +4,39 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/grad_actionbar"
     tools:context=".History">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        tools:ignore="MissingConstraints">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/poppins_medium"
+        android:gravity="center"
+        android:text="Date           Emission(CO)"
+        android:textColor="#DEFFFFFF"
+        android:textColorHighlight="#020202"
+        android:textFontWeight="30"
+        android:textSize="24sp"
+        tools:ignore="MissingConstraints" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textSize="30sp"
+
         android:text="TextView"
+        android:textColor="#FFFF"
+        android:fontFamily="@font/poppins_medium"
+        android:typeface="serif"
         android:id="@+id/textview"
         tools:ignore="MissingConstraints" />
+    </LinearLayout>
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

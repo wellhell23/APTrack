@@ -25,7 +25,6 @@ public class History extends AppCompatActivity {
             public void onCallback(String string) {
                 Toast.makeText(getApplicationContext(),string+"deepanshu",Toast.LENGTH_SHORT).show();
                 textView.setText(string);
-
             }
         });
 

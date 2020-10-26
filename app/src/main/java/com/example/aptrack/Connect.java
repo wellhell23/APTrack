@@ -2,6 +2,7 @@ package com.example.aptrack;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
@@ -38,6 +39,7 @@ public class Connect extends AppCompatActivity {
     Sendreseve sendreseve;
     Intent intent;
     String devicename;
+    SwipeRefreshLayout swipeRefreshLayout;
 
 
     private final BroadcastReceiver mReceiver = new BroadcastReceiver() {
@@ -93,6 +95,7 @@ public class Connect extends AppCompatActivity {
             }
 
         }
+
         listBoundedDevice.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
@@ -100,6 +103,18 @@ public class Connect extends AppCompatActivity {
                 clintClass.start();
                 devicename=btdevice[position].getAddress();
 
+            }
+        });
+
+        swipeRefreshLayout =findViewById(R.id.swiperefresh);
+        swipeRefreshLayout.setOnRefreshListener(new SwipeRefreshLayout.OnRefreshListener() {
+            @Override
+            public void onRefresh() {
+
+                String[] deviceName=getpaireddevice();
+                arrayAdapter=new ArrayAdapter<String>(getApplicationContext(),android.R.layout.simple_list_item_1,deviceName);
+                listBoundedDevice.setAdapter(arrayAdapter);
+                swipeRefreshLayout.setRefreshing(false);
             }
         });
 
